@@ -458,6 +458,19 @@ html,body{
     .deal{
         width: 30%;
     }
+
+    .footer-info{
+        height: auto;
+    }
+
+    .footer-contact{
+        height: auto;
+    }
+
+    .footer-about{
+        height: auto;
+    }
+
 }
 
 @media (max-width:900px) {
