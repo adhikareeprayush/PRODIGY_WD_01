@@ -1,0 +1,792 @@
+@import url('https://fonts.cdnfonts.com/css/beking');
+@import url('https://fonts.cdnfonts.com/css/b-bee-pollen');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #0e131f;
+
+}
+
+.nav-bar{
+    font-family: 'Beking', sans-serif;
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.nav-bar .brand h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    background: -webkit-linear-gradient(#213555, #ff0035);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.nav-bar .nav-links{
+    width:auto;
+}
+
+.nav-bar .nav-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-bar .nav-links ul li a{
+    color:#b7b5b5;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar .nav-links ul li a:hover{
+    color:#59546c;
+}
+
+.burger{
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    color:#213555;     
+    z-index:1000;
+    padding:6px;
+    cursor: pointer; 
+    display: none;
+}
+
+.active{
+    color: #59546c !important;
+}
+
+
+
+
+/* InfoBtn */
+.btn-info{
+    outline:none;
+    border:none;
+    padding: 10px 20px;
+    font-size:20px;
+    font-weight: 600;
+
+    background-color: transparent;
+    color:white;
+
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-info:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color:#213555;
+}
+
+
+/* Swipper */
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.782);
+    opacity: 0.5;
+  }
+
+
+  /* Deals */
+
+  .product-header{
+        width:100%;
+        height: auto;
+        text-align: center;
+        font-family: 'Beking', sans-serif;
+        margin-top:40px;
+        color: #38405f;
+  }
+
+  .deals{
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        margin-bottom:0px !important;
+  }
+
+  .deal{
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 10px;
+        background: linear-gradient(#213555, #b31736);
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;    
+    }
+
+    .deal:hover{
+        transform: scale(1.02);
+    }
+
+    .deal img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .deal-info h3{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+        font-family: "Beking", sans-serif;
+    }
+
+    .deal-info p{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0;
+        font-family: "Bee-Pollen", sans-serif;
+    }
+
+    .deal-info .btn-info{
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    .footer{
+        width:100%;
+        height: auto;
+        background: linear-gradient(#0e131f, #38405f);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:0px 20px;
+    }
+
+    .footer-info{
+        width:auto;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap:wrap;
+        padding:20px 0;
+    }
+
+    .footer-info h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top:20px;
+        font-family: "Beking", sans-serif;
+
+        background: -webkit-linear-gradient(#213555, #ff0035);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+
+    .footer-info p{
+        font-size: 15px;
+        font-weight: 500;
+        color:white;
+        margin-bottom: 10px;
+        font-family: "Bee-Pollen", sans-serif;
+    }
+
+    .social-medias{
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        gap:20px;
+        align-items: center;
+        flex-wrap:wrap;
+        padding:20px 0;
+    }
+
+    .social-medias i{
+        font-size: 25px;
+        color:white;
+        cursor: pointer;
+        margin-right:10px;
+        transition: all 0.3s ease;
+
+        background: linear-gradient(#ffffff, #ff0035);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+
+        transition: all 0.3s ease;
+    }
+
+    .social-medias i:hover{
+        background:linear-gradient(#ff0035, #ffffff);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+
+    .footer-about{
+        width:auto;
+        height: 250px;
+        display: flex;
+        text-align: start;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap:wrap;
+        padding:20px 0;
+    }
+
+    .footer-about h2{
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        color:#b7b5b5;
+        margin-top: 20px;
+        font-family: "Beking", sans-serif;
+    }
+
+    .footer-about p{
+        font-size: 14px;
+        font-weight: 500;
+        color:white;
+        margin-bottom: 10px;
+        font-family: "Bee-Pollen", sans-serif;
+    }
+
+    .footer-about .about-list{
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap:wrap;
+        padding:20px 0;
+    }
+
+    .footer-about .about-list ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+
+    .footer-about .about-list ul li a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0;
+        font-family: "Bee-Pollen", sans-serif;
+        transition: all 0.3s ease-in-out;
+
+        background:linear-gradient(#ff0035, #ffffff);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+
+    .footer-about .about-list ul li a:hover{
+        background:linear-gradient(#ffffff, #ff0035);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+
+
+    .footer-contact{
+        width:auto;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap:wrap;
+        padding:20px 0;
+    }
+
+
+    .footer-contact h2{
+        font-size: 30px;
+        font-weight: 600;
+        color:#b7b5b5;
+        margin-top: 20px;
+        font-family: "Beking", sans-serif;
+    }
+
+    .footer-contact p{
+        font-size: 14px;
+        font-weight: 500;
+        color:white;
+        margin-bottom: 10px;
+        font-family: "Bee-Pollen", sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media (max-width:1050px) {
+
+    .btn-info{
+        font-size: 18px;
+    }
+
+    .deal{
+        width: 30%;
+    }
+}
+
+@media (max-width:900px) {
+
+    .btn-info{
+        font-size: 16px;
+    }
+
+    .nav-bar .brand h1{
+        font-size: 20px;
+    }
+    
+    .nav-bar .nav-links{
+        width:auto;
+    }
+    
+    .nav-bar .nav-links ul{
+        gap:15px;
+    }
+    
+    .nav-bar .nav-links ul li a{
+        font-size: 14px;
+    }
+
+    .deal{
+        width: 40%;
+    }
+
+}
+
+@media (max-width:800px) {
+    .nav-bar .brand h1{
+        font-size: 18px;
+    }
+    
+    .nav-bar .nav-links{
+        width:auto;
+    }
+    
+    .nav-bar .nav-links ul{
+        gap:10px;
+    }
+    
+    .nav-bar .nav-links ul li a{
+        font-size: 12px;
+    }
+
+    .deal{
+        width: 40%;
+    }
+
+    .product-header{
+        margin-top:20px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .nav-bar .brand h1{
+        font-size: 18px;
+    }
+    
+    .nav-bar .nav-links{
+        width:auto;
+    }
+    
+    .nav-bar .nav-links ul{
+        gap:5px;
+    }
+    
+    .nav-bar .nav-links ul li a{
+        font-size: 12px;
+    }
+
+    .deal{
+        width: 50%;
+    }
+
+    .footer-info{
+        height: auto;
+        justify-content: center;
+    }
+
+    .footer-info h1{
+        font-size: 36px;
+    }
+
+    .footer-info p{
+        font-size: 16px;
+    }
+
+    .footer-about{
+        height: auto;
+    }
+
+    .footer-about h2{
+        font-size: 28px;
+    }
+
+    .footer-about p{
+        font-size: 14px;
+    }
+
+    .footer-about .about-list ul li a{
+        font-size: 13px;
+    }
+
+    .footer-contact{
+        height: auto;
+    }
+
+    .footer-contact h2{
+        font-size: 28px;
+    }
+
+    .footer-contact p{
+        font-size: 14px;
+    }
+
+    .product-header{
+        margin-top:20px;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:560px)
+{
+
+
+    .burger{
+        display: block;
+    }
+
+    .nav-bar .nav-links{
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+
+        z-index:999;
+        height: 100vh;
+        width: 100%;
+        background-color: #E5D283;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        display: none;
+    }
+
+    .clicked-menu{
+        display: flex !important;
+    }
+
+    .nav-bar .nav-links ul{
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-bar .nav-links ul li a{
+        width:fit-content;
+    }
+
+    .nav-bar .nav-links ul li a{
+        font-size: 12px;
+    }
+
+    .nav-bar .nav-links ul li a:hover{
+        color: #4F709C;
+    }
+
+    #close_icon{
+        display: none;
+    }
+
+    .deal{
+        width: 80%;
+    }
+
+    .footer-info h1{
+        font-size: 35px;
+    }
+
+    .footer-info p{
+        font-size: 16px;
+    }
+
+    .footer-about h2{
+        font-size: 28px;
+    }
+
+    .footer-about p{
+        font-size: 14px;
+    }
+
+    .footer-about .about-list ul li a{
+        font-size: 12px;
+    }
+
+    .footer-contact h2{
+        font-size: 28px;
+    }
+
+    .footer-contact p{
+        font-size: 14px;
+    }
+
+    .product-header{
+        margin-top:20px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:400px)
+{
+    .nav-bar .brand h1{
+        font-size: 14px;
+    }
+    
+    .nav-bar .nav-links{
+        width:auto;
+    }
+    
+    .nav-bar .nav-links ul{
+        gap:20px;
+    }
+    
+    .nav-bar .nav-links ul li a{
+        font-size: 20px;
+    }
+
+    .deal{
+        width: 90%;
+    }
+
+    .footer-info h1{
+        font-size: 32px;
+    }
+
+    .footer-info p{
+        font-size: 14px;
+    }
+
+    .footer-about h2{
+        font-size: 28px;
+    }
+
+    .footer-about p{
+        font-size: 12px;
+    }
+
+    .footer-about .about-list ul li a{
+        font-size: 12px;
+    }
+
+    .footer-contact h2{
+        font-size: 28px;
+    }
+
+    .footer-contact p{
+        font-size: 12px;
+    }
+
+    .product-header{
+        margin-top:20px;
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width:350px)
+{
+
+    .nav-bar .brand h1{
+        font-size: 12px;
+    }
+    
+    .nav-bar .nav-links{
+        width:auto;
+    }
+    
+    .nav-bar .nav-links ul{
+        gap:30px;
+    }
+    
+    .nav-bar .nav-links ul li a{
+        font-size: 16px;
+    }
+
+    .deal{
+        width: 90%;
+    }
+
+    .footer-info h1{
+        font-size: 28px;
+    }
+
+    .footer-info p{
+        font-size: 12px;
+    }
+
+    .footer-about h2{
+        font-size: 26px;
+    }
+
+    .footer-about p{
+        font-size: 10px;
+    }
+
+    .footer-about .about-list ul li a{
+        font-size: 12px;
+    }
+
+    .footer-contact h2{
+        font-size: 26px;
+    }
+
+    .footer-contact p{
+        font-size: 10px;
+    }
+
+    .product-header{
+        margin-top:20px;
+        font-size: 16px;
+    }
+
+}
