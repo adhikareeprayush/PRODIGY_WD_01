@@ -145,7 +145,7 @@ html,body{
         text-align: center;
         font-family: 'Beking', sans-serif;
         margin-top:40px;
-        color: #38405f;
+        color: #b7b5b5;
   }
 
   .deals{
@@ -153,10 +153,11 @@ html,body{
         height: auto;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 50px 0;
+        padding-top:20px;
         margin-bottom:0px !important;
   }
 
@@ -191,6 +192,7 @@ html,body{
         font-weight: 600;
         margin: 10px 0;
         color:white;
+        letter-spacing: 1px;
         font-family: "Beking", sans-serif;
     }
 
