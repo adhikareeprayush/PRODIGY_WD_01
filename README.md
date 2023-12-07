@@ -32,7 +32,7 @@ This project is a landing page developed as part of my Web Development internshi
 1. Clone the repository:
 
    ```bash
-   git clone [[repository_url(https://github.com/adhikareeprayush/PRODIGY_WD_01)]
+   git clone https://github.com/adhikareeprayush/PRODIGY_WD_01
 
 2. Open the index.html file in your preferred web browser.
 
